@@ -1,0 +1,65 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: grid;
+  align-items: end;
+  gap: 10px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.marines {
+  height: auto;
+  width: 150px;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title > h1 {
+  margin: 0 15px;
+}
+
+.horizontal {
+  flex: 1;
+  border-bottom: 5px double var(--line);
+}
+
+.vertical {
+  border-left: 3px double var(--line);
+  height: 80%;
+}
+
+.description {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.description > img {
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+}
+
+.game-reset.reset-btn {
+  font-size: 0.7rem;
+  padding: 4px;
+}
+
+/* TRANSITION SPIN TO STRAW HAT  */

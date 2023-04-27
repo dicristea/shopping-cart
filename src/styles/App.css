@@ -1,0 +1,22 @@
+.App-bg {
+  text-align: center;
+  background-color: var(--body-color);
+  min-width: 350px;
+  /* min-height: 100vh; */
+  padding-left: 7vmin;
+  padding-right: 7vmin;
+}
+
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+  border-right: 5px double var(--line);
+  border-left: 5px double var(--line);
+  display: grid;
+}
+
+.App-logo {
+  height: 80px;
+  width: auto;
+  pointer-events: none;
+}
