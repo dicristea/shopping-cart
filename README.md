@@ -6,8 +6,18 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 
 ## Features
 
-- Scoreboard shows your score of the current round, and a "Best Score" showing the best score achieved thus far.
-- Image cards are redisplayed in a random order anytime a user selects one.
+1. You should have at least two pages (a homepage and a shop page, which includes your shopping cart). Let a user navigate between the pages with a navigation bar, which will be shown on both routes.
+
+2. To your homepage, you can add whatever you’d like! A few images or information will be totally fine; it doesn’t have to be something fancy. The main goal of the project is to focus on setting up the shopping cart. The homepage is there to practice routing using react-router-dom.
+
+3. On your shopping cart route, a user should see a sticky bar (it can be just a top section as well), which displays the number of items currently in the cart. You should also have a button next to it where you can go to the cart to checkout and pay (however we are not going to implement this logic here).
+
+4. Build individual card items for each of your products. Display an input field on it, which lets a user manually type in how many items they want to buy. Also, add an increment and decrement button next to it for fine-tuning. You can also display a title for each product as well as an “Add To Cart” button.
+
+5. Once a user has submitted their order, the amount on the cart itself should adjust.
+   Make sure to test your app thoroughly using the React Testing Library. Take care that you don’t directly test react-router-dom, since it is an external library and the developers working on it must have tested the library already.
+
+Lastly, push the project to GitHub! Follow this link for instructions on how to deploy React applications with client-side routing to Github Pages. Be aware that the page will stay blank, unless you import { HashRouter } from react-router-dom and utilize a <HashRouter /> component in place of <BrowserRouter /> as GitHub no longer supports <BrowserRouter />. For a more detailed description, read these parts of the React Router Docs on client-side routing and deploying using gh-pages.
 
 ## Todos
 
@@ -23,15 +33,8 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 - Marine Logo:
   Photo found on <a href="https://one-piece-dnd-by-rustage.fandom.com/wiki/Marines">One Piece DND Wiki</a>
 
-- World Government logo:
-  Photo found on <a href="https://www.reddit.com/r/vexillology/comments/2e0w2l/flag_of_the_world_government_one_piece/">this reddit post</a>
-
-- Wanted Pirate Posters:
-  Photos found on <a href="https://onepiece.fandom.com/wiki/Bounties/Gallery">One Piece Wiki</a>
-
-  - "Jinbe" wanted poster found <a href="https://kagetsuki.com/en/products/jinbe-wanted-poster?variant=43897094308118">here</a>.
-
-- <a href="https://www.flaticon.com/free-animated-icons/cash" title="cash animated icons">Cash animated icons created by Freepik - Flaticon</a>
+- White Shirt:
+  Photo by <a href="https://unsplash.com/it/@uyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haryo Setyadi</a> on <a href="https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 --
 
