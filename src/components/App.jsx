@@ -31,16 +31,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      {isHome && (
-        <Home
-          navigateToCatalog={navigateToCatalog}
-          navigateToCart={navigateToCart}
-        />
-      )}
-      {viewCatalog && <Catalog />}
-      {viewShoppingCart && <ShoppingCart />}
-      {viewPopup && <Popup navigateToCart={navigateToCart} />}
+      <Header
+        navigateToCatalog={navigateToCatalog}
+        navigateToCart={navigateToCart}
+      />
+      <div className="main">
+        {isHome && <Home navigateToCatalog={navigateToCatalog} />}
+        {viewCatalog && <Catalog />}
+        {viewShoppingCart && <ShoppingCart />}
+        {viewPopup && <Popup navigateToCart={navigateToCart} />}
+      </div>
       <Footer />
     </div>
   );

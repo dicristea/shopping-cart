@@ -17,8 +17,6 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 5. Once a user has submitted their order, the amount on the cart itself should adjust.
    Make sure to test your app thoroughly using the React Testing Library. Take care that you don’t directly test react-router-dom, since it is an external library and the developers working on it must have tested the library already.
 
-Lastly, push the project to GitHub! Follow this link for instructions on how to deploy React applications with client-side routing to Github Pages. Be aware that the page will stay blank, unless you import { HashRouter } from react-router-dom and utilize a <HashRouter /> component in place of <BrowserRouter /> as GitHub no longer supports <BrowserRouter />. For a more detailed description, read these parts of the React Router Docs on client-side routing and deploying using gh-pages.
-
 ## Todos
 
 - Make UI more responsive for phone screens --> css media queries
@@ -30,13 +28,10 @@ Lastly, push the project to GitHub! Follow this link for instructions on how to 
 
 ## Sources
 
-- Marine Logo:
-  Photo found on <a href="https://one-piece-dnd-by-rustage.fandom.com/wiki/Marines">One Piece DND Wiki</a>
-
-- White Shirt:
-  Photo by <a href="https://unsplash.com/it/@uyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haryo Setyadi</a> on <a href="https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
---
+- Title Background
+  Photo by <a href="https://unsplash.com/@eexit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joris Berthelot</a> on <a href="https://unsplash.com/photos/EnTU_hr9wPA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Shopping Bag
+  <a href="https://www.flaticon.com/free-icons/shopping-bag" title="shopping bag icons">Shopping bag icons created by Freepik - Flaticon</a>
 
 ## React
 

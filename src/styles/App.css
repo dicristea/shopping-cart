@@ -1,22 +1,26 @@
-.App-bg {
-  text-align: center;
-  background-color: var(--body-color);
-  min-width: 350px;
-  /* min-height: 100vh; */
-  padding-left: 7vmin;
-  padding-right: 7vmin;
-}
-
 .App {
   min-width: 100%;
   min-height: 100vh;
-  border-right: 5px double var(--line);
-  border-left: 5px double var(--line);
-  display: grid;
 }
 
 .App-logo {
   height: 80px;
   width: auto;
   pointer-events: none;
+}
+
+.main {
+  z-index: 2;
+  min-height: 100vh;
+  background: #fff;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.main > img {
+  object-fit: cover;
+  height: 100vh;
 }

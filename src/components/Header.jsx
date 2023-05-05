@@ -1,17 +1,25 @@
 import React from "react";
+import Bag from "../assets/shopping-bag.png";
+import logo from "../assets/luxuriant-logo/logo-transparent-png.png";
 import "../styles/Header.css";
 
-const Header = ({ count, bestScore, resetGame }) => {
+const Header = ({ navigateToCatalog, navigateToCart }) => {
   return (
     <header className="header">
       <div className="title">
-        <div className="horizontal" />
-        <h1>Luxurious Luxury</h1>
-        <div className="horizontal" />
+        <img src={logo} alt="Luxuriant" />
       </div>
-      <div className="description">
-        <button className="shopping-cart" onClick={() => resetGame()}>
-          Shopping Cart
+      <div className="pages">
+        <button className="container" onClick={() => navigateToCatalog()}>
+          <h3 className="about hover-underline-animation">About</h3>
+        </button>
+        <button className="container" onClick={() => navigateToCatalog()}>
+          <h3 className="collections hover-underline-animation">Collections</h3>
+        </button>
+      </div>
+      <div className="">
+        <button className="container" onClick={() => navigateToCart()}>
+          <img src={Bag} alt="Shopping Bag" />
         </button>
       </div>
     </header>

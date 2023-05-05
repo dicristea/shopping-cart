@@ -19,7 +19,8 @@ button {
   cursor: pointer;
   height: auto;
   display: flex;
-  border: 3px solid rgb(180, 152, 59);
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .card button > img {
@@ -61,29 +62,4 @@ button {
   background-color: white;
   padding: 20px;
   border-radius: var(--border-radius);
-}
-
-.reset-btn {
-  border: 3px double var(--accent);
-  outline: none;
-  border-radius: var(--border-radius);
-  padding: 7px 13px;
-  background-color: white;
-  color: var(--dark-accent);
-}
-
-button.reset-btn:hover {
-  border-color: #79b3e0;
-  box-shadow: var(--box-shadow);
-}
-
-.winner > div {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.winner-gif {
-  width: 50px;
-  height: auto;
 }
