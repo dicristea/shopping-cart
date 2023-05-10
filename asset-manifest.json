@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.10239058.css",
-    "main.js": "/shopping-cart/static/js/main.c9e4ee38.js",
+    "main.css": "/shopping-cart/static/css/main.2d08b85e.css",
+    "main.js": "/shopping-cart/static/js/main.1c99cb67.js",
     "static/js/787.eaad36ba.chunk.js": "/shopping-cart/static/js/787.eaad36ba.chunk.js",
-    "static/media/logo.svg": "/shopping-cart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/about-hero-img.jpeg": "/shopping-cart/static/media/about-hero-img.39b5c05ec8c959c7ba9e.jpeg",
+    "static/media/title-adventure.jpeg": "/shopping-cart/static/media/title-adventure.efbb90fac5a993cd956c.jpeg",
+    "static/media/womens-yellow-jacket.jpeg": "/shopping-cart/static/media/womens-yellow-jacket.23ca7f15377ce3cd1b82.jpeg",
+    "static/media/mens-white-black-jacket.jpeg": "/shopping-cart/static/media/mens-white-black-jacket.b243ebe6d90bc35ee1b3.jpeg",
+    "static/media/womens-black-jacket.jpeg": "/shopping-cart/static/media/womens-black-jacket.d9ca5e8ecdb435f97856.jpeg",
+    "static/media/purple-suit.jpeg": "/shopping-cart/static/media/purple-suit.ee55bb7ae201964c1832.jpeg",
+    "static/media/mens-orange-jacket.jpeg": "/shopping-cart/static/media/mens-orange-jacket.31eb8564c1847e850033.jpeg",
+    "static/media/name-logo-circle.png": "/shopping-cart/static/media/name-logo-circle.af1e4fb6754e86baa44f.png",
+    "static/media/mens-brown-jacket.jpeg": "/shopping-cart/static/media/mens-brown-jacket.3e4bff32a44ec74f918f.jpeg",
     "index.html": "/shopping-cart/index.html",
-    "main.10239058.css.map": "/shopping-cart/static/css/main.10239058.css.map",
-    "main.c9e4ee38.js.map": "/shopping-cart/static/js/main.c9e4ee38.js.map",
+    "main.2d08b85e.css.map": "/shopping-cart/static/css/main.2d08b85e.css.map",
+    "main.1c99cb67.js.map": "/shopping-cart/static/js/main.1c99cb67.js.map",
     "787.eaad36ba.chunk.js.map": "/shopping-cart/static/js/787.eaad36ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10239058.css",
-    "static/js/main.c9e4ee38.js"
+    "static/css/main.2d08b85e.css",
+    "static/js/main.1c99cb67.js"
   ]
 }
