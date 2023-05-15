@@ -32,7 +32,9 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
   Photo by <a href="https://unsplash.com/@eexit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joris Berthelot</a> on <a href="https://unsplash.com/photos/EnTU_hr9wPA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Shopping Bag
   <a href="https://www.flaticon.com/free-icons/shopping-bag" title="shopping bag icons">Shopping bag icons created by Freepik - Flaticon</a>
-- All Catalog Photos by <a href="https://unsplash.com/@karsten116?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten Winegeart</a> on <a href="https://unsplash.com/photos/Wc0xH0tFkpI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Most Catalog Photos by <a href="https://unsplash.com/@karsten116?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten Winegeart</a> on <a href="https://unsplash.com/photos/Wc0xH0tFkpI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Catalog: Blue White Suit Photo by <a href="https://unsplash.com/@phodskins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hodskins</a> on <a href="https://unsplash.com/photos/YKikzmEOJXM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Catalog: Yellow Pants Photo by <a href="https://unsplash.com/@rodograph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Rodvang</a> on <a href="https://unsplash.com/photos/kIavtjR0sZY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - About Hero Photo by <a href="https://unsplash.com/@moorecreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harrison Moore</a> on <a href="https://unsplash.com/photos/pNuBdhn8vKU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 ## React

@@ -4,55 +4,73 @@ import mensOrangeJacket from "../assets/Catalog/mens-orange-jacket.jpeg";
 import mensWhiteJacket from "../assets/Catalog/mens-white-black-jacket.jpeg";
 import womensBlackJacket from "../assets/Catalog/womens-black-jacket.jpeg";
 import womensYellowJacket from "../assets/Catalog/womens-yellow-jacket.jpeg";
+import mensYellowPants from "../assets/Catalog/mens-yellow-pants.jpeg";
+import blueWhiteSuit from "../assets/Catalog/unisex-blue-white-suit.jpeg";
 
 const catalog = [
   {
-    name: "Purple Suit",
-    price: 1000.0,
+    name: "purple_suit",
+    price: "1000.00",
     color: "purple",
     type: "suit",
     img: purpleSuit,
     gender: "men",
   },
   {
-    name: "Brown Jacket",
-    price: 190.0,
+    name: "brown_jacket",
+    price: "190.00",
     color: "Brown",
     type: "jacket",
     img: mensBrownJacket,
     gender: "men",
   },
   {
-    name: "Orange Jacket",
-    price: 180.0,
+    name: "orange_jacket",
+    price: "180.00",
     color: "orange",
     type: "jacket",
     img: mensOrangeJacket,
     gender: "men",
   },
   {
-    name: "White and Black Jacket",
-    price: 250.0,
+    name: "speckled_jacket",
+    price: "250.00",
     color: "white",
     type: "jacket",
     img: mensWhiteJacket,
     gender: "men",
   },
   {
-    name: "Black Jacket",
-    price: 200.0,
+    name: "black_jacket",
+    price: "200.00",
     color: "black",
     type: "jacket",
     img: womensBlackJacket,
     gender: "women",
   },
   {
-    name: "Yellow Jacket",
-    price: 150.0,
+    name: "yellow_jacket",
+    price: "150.00",
     color: "yellow",
     type: "jacket",
     img: womensYellowJacket,
     gender: "women",
+  },
+  {
+    name: "yellow_pants",
+    price: "175.00",
+    color: "yellow",
+    type: "pants",
+    img: mensYellowPants,
+    gender: "men",
+  },
+  {
+    name: "american_suit",
+    price: "1500.00",
+    color: "blue",
+    type: "suit",
+    img: blueWhiteSuit,
+    gender: "unisex",
   },
 ];
 

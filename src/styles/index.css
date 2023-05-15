@@ -1,13 +1,11 @@
 :root {
-  --dark-accent: #0f4d7d;
   --body-color: rgba(240, 242, 255, 0.793);
-  --card-color: white;
-  --accent: #2b1971;
-  --red-accent: #bd3fac;
+  --header-color: rgba(255, 255, 255, 0.713);
+  --card-color: rgba(255, 255, 255, 0.537);
+  --accent: rgb(13, 24, 93);
   --box-shadow: 0px 2px 7px rgba(128, 128, 128, 0.412);
   --border-radius: 4px;
   --link: #1c79be;
-  --line: #1c79be;
 }
 
 * {
@@ -67,10 +65,15 @@ a {
 
 button {
   cursor: pointer;
-  height: auto;
   border: none;
   font: inherit;
   background-color: rgba(0, 0, 0, 0);
+}
+
+button.container > img {
+  height: 1.5rem;
+  width: auto;
+  cursor: pointer;
 }
 
 /* Footer */

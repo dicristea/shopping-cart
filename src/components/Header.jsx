@@ -2,6 +2,7 @@ import React from "react";
 import Bag from "../assets/shopping-bag.png";
 import logo from "../assets/Luxuriant-Logo/name-logo-circle.png";
 import "../styles/Header.css";
+import CartNumber from "./CartNumber";
 
 const Header = ({
   navigateToHome,
@@ -24,9 +25,10 @@ const Header = ({
           <h3 className="collections hover-underline-animation">Collections</h3>
         </button>
       </div>
-      <div className="">
+      <div>
         <button className="container" onClick={navigateToCart}>
           <img src={Bag} alt="Shopping Bag" />
+          <CartNumber number={1} />
         </button>
       </div>
     </header>

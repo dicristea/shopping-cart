@@ -66,3 +66,7 @@
   padding: 15px 25px;
   border-radius: var(--border-radius);
 }
+
+.hero-button:hover {
+  background-color: rgba(240, 242, 255, 0.431);
+}
