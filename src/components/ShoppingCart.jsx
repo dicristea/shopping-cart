@@ -9,9 +9,9 @@ const ShoppingCart = () => {
   // array of catalog item names
   let catalogItemNames = CatalogArray.map((item) => item.name);
 
-  const checkName = (array) => {
+  const inCatalog = (array) => {
     // filters for arrays with array[0] (name) which is found in our catalog
-    if (catalogItemNames.includes(array[0])) {
+    if (catalogItemNames.includes(array)) {
       return array;
     }
   };
@@ -19,21 +19,20 @@ const ShoppingCart = () => {
   const getShoppingCart = () => {
     if (localStorage !== null) {
       // Filtered Array of Arrays created from localstorage objects i.e. [[brown_jacket, 2], [yellow_jacket, 1]]
-      let localCart = Object.entries(fetchCart()).filter(checkName);
+      let localStorage = fetchCart();
 
-      let finalCart = localCart.map((itemArray) => {
-        let itemIndex = catalogItemNames.findIndex(
-          (arrayItem) => arrayItem === itemArray[0]
-        );
-        let finalItem = CatalogArray[itemIndex];
-        finalItem.quantity = itemArray[1];
-        return finalItem;
-      });
-
-      let visibleCart = finalCart.map((item) => (
-        <Card key={item.name} item={item} inCart={true} />
-      ));
-      return visibleCart;
+      return Object.keys(localStorage)
+        .filter((item) => catalogItemNames.includes(item))
+        .map((itemKey) => (
+          <Card
+            key={itemKey}
+            item={{
+              ...CatalogArray[itemKey],
+              quantity: localStorage[itemKey],
+            }}
+            inCart={true}
+          />
+        ));
 
       // final need to be Array of Final cart objects
     } else {
