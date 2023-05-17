@@ -1,13 +1,19 @@
-/* .about-container {
-  display: flex;
-  flex-direction: column;
-} */
-
-.about-text {
-  padding: 10vw;
+.about-container {
+  background-color: var(--body-color);
+  padding: 1.5rem;
+  display: grid;
+  justify-items: center;
 }
 
 .about-img > img {
   height: auto;
   width: 100%;
+}
+
+.about-header {
+  text-align: center;
+}
+
+.about-text {
+  padding: 15px 5vw;
 }

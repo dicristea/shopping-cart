@@ -1,7 +1,6 @@
 .card-holder {
-  padding: 15px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   justify-items: center;
   gap: 20px;
@@ -20,16 +19,17 @@
 }
 
 .item-info.container {
-  padding: 10px;
+  padding: 15px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .item-text {
   line-height: 1.5rem;
 }
 
-.add-to-cart {
+.add-to-cart,
+.in-cart {
   display: grid;
   justify-items: end;
   gap: 10px;
@@ -46,6 +46,17 @@ button.purchase {
 
 button.add-to-cart > img {
   height: 1.2rem;
+  width: auto;
+}
+
+button.remove-from-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button.remove-from-cart > img {
+  height: 0.8rem;
   width: auto;
 }
 

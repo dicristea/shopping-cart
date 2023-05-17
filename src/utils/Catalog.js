@@ -7,8 +7,8 @@ import womensYellowJacket from "../assets/Catalog/womens-yellow-jacket.jpeg";
 import mensYellowPants from "../assets/Catalog/mens-yellow-pants.jpeg";
 import blueWhiteSuit from "../assets/Catalog/unisex-blue-white-suit.jpeg";
 
-const catalog = [
-  {
+const CATALOG = {
+  purple_suit: {
     name: "purple_suit",
     price: "1000.00",
     color: "purple",
@@ -16,7 +16,7 @@ const catalog = [
     img: purpleSuit,
     gender: "men",
   },
-  {
+  brown_jacket: {
     name: "brown_jacket",
     price: "190.00",
     color: "Brown",
@@ -24,7 +24,7 @@ const catalog = [
     img: mensBrownJacket,
     gender: "men",
   },
-  {
+  orange_jacket: {
     name: "orange_jacket",
     price: "180.00",
     color: "orange",
@@ -32,7 +32,7 @@ const catalog = [
     img: mensOrangeJacket,
     gender: "men",
   },
-  {
+  speckled_jacket: {
     name: "speckled_jacket",
     price: "250.00",
     color: "white",
@@ -40,7 +40,7 @@ const catalog = [
     img: mensWhiteJacket,
     gender: "men",
   },
-  {
+  black_jacket: {
     name: "black_jacket",
     price: "200.00",
     color: "black",
@@ -48,7 +48,7 @@ const catalog = [
     img: womensBlackJacket,
     gender: "women",
   },
-  {
+  yellow_jacket: {
     name: "yellow_jacket",
     price: "150.00",
     color: "yellow",
@@ -56,7 +56,7 @@ const catalog = [
     img: womensYellowJacket,
     gender: "women",
   },
-  {
+  yellow_pants: {
     name: "yellow_pants",
     price: "175.00",
     color: "yellow",
@@ -64,7 +64,7 @@ const catalog = [
     img: mensYellowPants,
     gender: "men",
   },
-  {
+  american_suit: {
     name: "american_suit",
     price: "1500.00",
     color: "blue",
@@ -72,6 +72,6 @@ const catalog = [
     img: blueWhiteSuit,
     gender: "unisex",
   },
-];
+};
 
-export default catalog;
+export default CATALOG;

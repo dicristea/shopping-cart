@@ -49,6 +49,7 @@
   transform: scaleX(1);
 }
 
+/* Only way to show underline animation on mobile (no hover); however, line stays active until clicking off the button */
 @media only screen and (max-width: 400px) {
   .hover-underline-animation:focus::after {
     transform: scaleX(1);

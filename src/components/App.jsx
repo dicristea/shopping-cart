@@ -14,19 +14,15 @@ function App() {
   const [viewCatalog, setViewCatalog] = useState(false);
   const [viewShoppingCart, setViewShoppingCart] = useState(false);
 
-  // const [viewPopup, setViewPopup] = useState(false);
-
   const navigateToHome = () => {
     setViewAbout(false);
     setViewCatalog(false);
     setViewShoppingCart(false);
-    // setViewPopup(false);
     setIsHome(true);
   };
 
   const navigateToAbout = () => {
     setIsHome(false);
-    // setViewPopup(false);
     setViewShoppingCart(false);
     setViewCatalog(false);
     setViewAbout(true);
@@ -35,22 +31,16 @@ function App() {
   const navigateToCatalog = () => {
     setIsHome(false);
     setViewAbout(false);
-    // setViewPopup(false);
     setViewShoppingCart(false);
     setViewCatalog(true);
   };
 
   const navigateToCart = () => {
     setViewCatalog(false);
-    // setViewPopup(false);
     setViewAbout(false);
     setIsHome(false);
     setViewShoppingCart(true);
   };
-
-  // const popup = () => {
-  //   setViewPopup(true);
-  // };
 
   return (
     <div className="App">
@@ -65,7 +55,6 @@ function App() {
         {viewAbout && <About />}
         {viewCatalog && <Catalog />}
         {viewShoppingCart && <ShoppingCart />}
-        {/* {viewPopup && <Popup navigateToCart={navigateToCart} />} */}
       </main>
       <Footer />
     </div>
