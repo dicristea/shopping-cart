@@ -9,30 +9,28 @@ const Header = ({
   navigateToAbout,
   navigateToCatalog,
   navigateToCart,
-}) => {
-  return (
-    <header className="header">
-      <div className="title">
-        <button className="container" onClick={navigateToHome}>
-          <img src={logo} alt="Luxuriant" />
-        </button>
-      </div>
-      <div className="pages">
-        <button className="container" onClick={navigateToAbout}>
-          <h3 className="about hover-underline-animation">About</h3>
-        </button>
-        <button className="container" onClick={navigateToCatalog}>
-          <h3 className="collections hover-underline-animation">Collections</h3>
-        </button>
-      </div>
-      <div>
-        <button className="container" onClick={navigateToCart}>
-          <img src={Bag} alt="Shopping Bag" />
-          <CartNumber number={1} />
-        </button>
-      </div>
-    </header>
-  );
-};
+}) => (
+  <header className="header">
+    <div className="title">
+      <button className="container" onClick={navigateToHome}>
+        <img src={logo} alt="Luxuriant" />
+      </button>
+    </div>
+    <div className="pages">
+      <button className="container" onClick={navigateToAbout}>
+        <h3 className="about hover-underline-animation">About</h3>
+      </button>
+      <button className="container" onClick={navigateToCatalog}>
+        <h3 className="collections hover-underline-animation">Collections</h3>
+      </button>
+    </div>
+    <div>
+      <button className="container" onClick={navigateToCart}>
+        <img src={Bag} alt="Shopping Bag" />
+        <CartNumber number={1} />
+      </button>
+    </div>
+  </header>
+);
 
 export default Header;

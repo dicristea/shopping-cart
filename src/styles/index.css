@@ -6,6 +6,7 @@
   --box-shadow: 0px 2px 7px rgba(128, 128, 128, 0.412);
   --border-radius: 4px;
   --link: #1c79be;
+  --line: rgba(128, 128, 128, 0.5);
 }
 
 * {
@@ -61,6 +62,16 @@ p {
 
 a {
   color: var(--link);
+}
+
+.header-h-line {
+  margin: 0.5rem;
+  width: 13rem;
+}
+
+.h-line,
+.header-h-line {
+  border-top: 1px solid var(--line);
 }
 
 button {

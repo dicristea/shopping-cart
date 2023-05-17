@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Card.css";
 import Bag from "../assets/shopping-bag-white-add.png";
 import fetchItem from "../utils/fetchItem";
+import x from "../assets/remove-x.png";
 
 const Card = ({ item, inCart }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(1);
@@ -17,16 +18,10 @@ const Card = ({ item, inCart }) => {
     }
   };
 
-  const onChangeQuantity = (e) => {
-    setQuantityToBuy(Number(e.target.value));
+  const removeFromCart = () => {
+    localStorage.removeItem(`${item.name}`);
+    window.location.reload(false); // useEffect to reload only shopping Cart
   };
-
-  // useCallback !!!!!!!!!!!!!!
-  const parseItemName = () =>
-    item.name
-      .split("_")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
 
   return (
     <div className="card">
@@ -35,7 +30,12 @@ const Card = ({ item, inCart }) => {
       </div>
       <div className="item-info container">
         <div className="item-text">
-          <div className="item-name">{parseItemName()}</div>
+          <div className="item-name">
+            {item.name
+              .split("_")
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(" ")}
+          </div>
           <div className="item-price">${item.price}</div>
         </div>
         {!inCart && (
@@ -48,16 +48,24 @@ const Card = ({ item, inCart }) => {
                 max="9"
                 step="1"
                 value={quantityToBuy}
-                onChange={onChangeQuantity}
+                onChange={(e) => setQuantityToBuy(Number(e.target.value))}
               />
               {/* <button>+</button> */}
             </div>
-            <button className="add-to-cart container" onClick={addToCart}>
+            <button className="add-to-cart" onClick={addToCart}>
               <img src={Bag} alt="Shopping Bag" />
             </button>
           </div>
         )}
-        {inCart && <div className="quantity">Quantity: {item.quantity}</div>}
+        {inCart && (
+          <div className="in-cart">
+            <div className="quantity">Quantity: {item.quantity}</div>
+            <button className="remove-from-cart" onClick={removeFromCart}>
+              Remove
+              <img src={x} alt="Shopping Bag" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
