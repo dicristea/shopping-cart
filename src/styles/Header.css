@@ -56,4 +56,13 @@
   }
 }
 
+.bag-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-number {
+  display: grid;
+}
+
 /* https://www.30secondsofcode.org/css/s/hover-underline-animation/ */

@@ -3,6 +3,7 @@
   --header-color: rgba(255, 255, 255, 0.713);
   --card-color: rgba(255, 255, 255, 0.537);
   --accent: rgb(13, 24, 93);
+  --accent-active: rgba(13, 24, 93, 0.796);
   --box-shadow: 0px 2px 7px rgba(128, 128, 128, 0.412);
   --border-radius: 4px;
   --link: #1c79be;

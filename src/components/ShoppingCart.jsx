@@ -4,17 +4,11 @@ import Card from "./Card";
 import "../styles/Catalog.css";
 import "../styles/Card.css";
 import "../styles/Cart.css";
+import inCatalog from "../utils/inCatalog";
 import CATALOG from "../utils/Catalog";
+import CartNumber from "./CartNumber";
 
 const ShoppingCart = () => {
-  const catalogItemNames = Object.keys(CATALOG);
-
-  const inCatalog = (item) => {
-    if (catalogItemNames.includes(item)) {
-      return item;
-    }
-  };
-
   const localStorage = fetchCart();
 
   let shoppingCart = Object.keys(localStorage)
@@ -41,7 +35,9 @@ const ShoppingCart = () => {
         <div className="order-summary">
           <div className="summary-header">
             <h3>Order Summary</h3>
-            <span>## Items</span>
+            <span>
+              <CartNumber /> Items
+            </span>
           </div>
           <span className="h-line"></span>
           <div>Subtotal: </div>

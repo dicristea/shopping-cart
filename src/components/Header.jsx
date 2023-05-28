@@ -25,9 +25,9 @@ const Header = ({
       </button>
     </div>
     <div>
-      <button className="container" onClick={navigateToCart}>
+      <button className="container bag-icon-container" onClick={navigateToCart}>
         <img src={Bag} alt="Shopping Bag" />
-        <CartNumber number={1} />
+        <CartNumber />
       </button>
     </div>
   </header>

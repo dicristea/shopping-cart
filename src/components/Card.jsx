@@ -39,7 +39,7 @@ const Card = ({ item, inCart }) => {
           <div className="item-price">${item.price}</div>
         </div>
         {!inCart && (
-          <div className="add-to-cart">
+          <div className="add-container">
             <div className="quantity">
               {/* <button>-</button> */}
               <input
@@ -59,10 +59,21 @@ const Card = ({ item, inCart }) => {
         )}
         {inCart && (
           <div className="in-cart">
-            <div className="quantity">Quantity: {item.quantity}</div>
+            <div className="quantity">
+              Quantity:
+              <button>-</button>
+              <input
+                type="number"
+                min="1"
+                max="9"
+                step="1"
+                value={item.quantity}
+                onChange={(e) => setQuantityToBuy(Number(e.target.value))}
+              />
+              <button>+</button>
+            </div>
             <button className="remove-from-cart" onClick={removeFromCart}>
-              Remove
-              <img src={x} alt="Shopping Bag" />
+              <img src={x} alt="Remove" />
             </button>
           </div>
         )}

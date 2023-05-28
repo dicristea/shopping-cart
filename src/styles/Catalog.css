@@ -1,14 +1,14 @@
 .catalog-container,
 .cart-container {
   background-color: var(--body-color);
-  padding-top: 150px !important;
+  padding-top: 130px !important;
   padding: 5vw;
 }
 
 @media only screen and (max-width: 400px) {
   .catalog-container,
   .cart-container {
-    padding-top: 130px !important;
+    padding-top: 110px !important;
   }
 }
 

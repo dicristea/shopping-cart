@@ -25,14 +25,27 @@
 }
 
 .item-text {
+  display: grid;
+  gap: 10px;
+}
+
+.item-name {
   line-height: 1.5rem;
 }
 
-.add-to-cart,
+.item-price {
+  align-self: end;
+}
+
+.add-container,
 .in-cart {
   display: grid;
   justify-items: end;
   gap: 10px;
+}
+
+.quantity {
+  text-align: center;
 }
 
 button.add-to-cart,
@@ -42,6 +55,11 @@ button.purchase {
   border-radius: var(--border-radius);
   color: white;
   font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
+}
+
+button.add-to-cart:active,
+button.purchase:active {
+  background-color: var(--accent-active);
 }
 
 button.add-to-cart > img {
