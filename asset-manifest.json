@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.3f1dc091.css",
-    "main.js": "/shopping-cart/static/js/main.8b7e0fe9.js",
+    "main.css": "/shopping-cart/static/css/main.05922064.css",
+    "main.js": "/shopping-cart/static/js/main.7d66c577.js",
     "static/js/787.eaad36ba.chunk.js": "/shopping-cart/static/js/787.eaad36ba.chunk.js",
     "static/media/about-hero-img.jpeg": "/shopping-cart/static/media/about-hero-img.6198f92e938dba33b9c3.jpeg",
     "static/media/title-adventure.jpeg": "/shopping-cart/static/media/title-adventure.efbb90fac5a993cd956c.jpeg",
@@ -15,12 +15,12 @@
     "static/media/unisex-blue-white-suit.jpeg": "/shopping-cart/static/media/unisex-blue-white-suit.9bba1418b3de568c8e2b.jpeg",
     "static/media/mens-yellow-pants.jpeg": "/shopping-cart/static/media/mens-yellow-pants.233ab140477a0d26fd4c.jpeg",
     "index.html": "/shopping-cart/index.html",
-    "main.3f1dc091.css.map": "/shopping-cart/static/css/main.3f1dc091.css.map",
-    "main.8b7e0fe9.js.map": "/shopping-cart/static/js/main.8b7e0fe9.js.map",
+    "main.05922064.css.map": "/shopping-cart/static/css/main.05922064.css.map",
+    "main.7d66c577.js.map": "/shopping-cart/static/js/main.7d66c577.js.map",
     "787.eaad36ba.chunk.js.map": "/shopping-cart/static/js/787.eaad36ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f1dc091.css",
-    "static/js/main.8b7e0fe9.js"
+    "static/css/main.05922064.css",
+    "static/js/main.7d66c577.js"
   ]
 }
