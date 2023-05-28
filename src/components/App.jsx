@@ -9,39 +9,23 @@ import ShoppingCart from "./ShoppingCart";
 import fetchCart from "../utils/fetchCart";
 
 function App() {
-  const [isHome, setIsHome] = useState(true);
-  const [viewAbout, setViewAbout] = useState(false);
-  const [viewCatalog, setViewCatalog] = useState(false);
-  const [viewShoppingCart, setViewShoppingCart] = useState(false);
+  const [currentPage, setCurrentPage] = useState("Home");
   const [itemQuantity, setItemQuantity] = useState(0);
 
-  // Try not to hardcode all of the true/false for all the views.
   const navigateToHome = () => {
-    setViewAbout(false);
-    setViewCatalog(false);
-    setViewShoppingCart(false);
-    setIsHome(true);
+    setCurrentPage("Home");
   };
 
   const navigateToAbout = () => {
-    setIsHome(false);
-    setViewShoppingCart(false);
-    setViewCatalog(false);
-    setViewAbout(true);
+    setCurrentPage("About");
   };
 
   const navigateToCatalog = () => {
-    setIsHome(false);
-    setViewAbout(false);
-    setViewShoppingCart(false);
-    setViewCatalog(true);
+    setCurrentPage("Catalog");
   };
 
   const navigateToCart = () => {
-    setViewCatalog(false);
-    setViewAbout(false);
-    setIsHome(false);
-    setViewShoppingCart(true);
+    setCurrentPage("ShoppingCart");
   };
 
   const updateItemQuantity = () => {
@@ -68,10 +52,14 @@ function App() {
         itemQuantity={itemQuantity}
       />
       <main className="main">
-        {isHome && <Home navigateToCatalog={navigateToCatalog} />}
-        {viewAbout && <About />}
-        {viewCatalog && <Catalog updateItemQuantity={updateItemQuantity} />}
-        {viewShoppingCart && (
+        {currentPage === "Home" && (
+          <Home navigateToCatalog={navigateToCatalog} />
+        )}
+        {currentPage === "About" && <About />}
+        {currentPage === "Catalog" && (
+          <Catalog updateItemQuantity={updateItemQuantity} />
+        )}
+        {currentPage === "ShoppingCart" && (
           <ShoppingCart
             itemQuantity={itemQuantity}
             updateItemQuantity={updateItemQuantity}
