@@ -6,13 +6,18 @@ import x from "../assets/remove-x.png";
 
 const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(1);
+  const [itemQuantityCART, setItemQuantityCART] = useState(item.quantity);
 
   const addToCart = () => {
     let itemQuantity = fetchItem(`${item.name}`);
 
     if (itemQuantity !== null) {
       itemQuantity = Number(itemQuantity) + Number(quantityToBuy);
-      localStorage.setItem(`${item.name}`, JSON.stringify(itemQuantity));
+      if (itemQuantity > 0 && itemQuantity < 6) {
+        localStorage.setItem(`${item.name}`, JSON.stringify(itemQuantity));
+      } else {
+        alert("Maximum Quantity is 5");
+      }
     } else {
       localStorage.setItem(`${item.name}`, JSON.stringify(quantityToBuy));
     }
@@ -22,6 +27,32 @@ const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
   const removeFromCart = () => {
     localStorage.removeItem(`${item.name}`);
     updateCart();
+  };
+
+  const decrement = () => {
+    if (inCart && itemQuantityCART > 1) {
+      setItemQuantityCART(itemQuantityCART - 1);
+      localStorage.setItem(
+        `${item.name}`,
+        JSON.stringify(itemQuantityCART - 1)
+      );
+      updateCart();
+    } else {
+      setQuantityToBuy(quantityToBuy - 1);
+    }
+  };
+
+  const increment = () => {
+    if (inCart && itemQuantityCART < 5) {
+      setItemQuantityCART(Number(itemQuantityCART) + 1);
+      localStorage.setItem(
+        `${item.name}`,
+        JSON.stringify(Number(itemQuantityCART) + 1)
+      );
+      updateCart();
+    } else {
+      setQuantityToBuy(Number(quantityToBuy) + 1);
+    }
   };
 
   return (
@@ -42,17 +73,22 @@ const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
         {!inCart && (
           <div className="add-container">
             <div className="quantity">
-              {/* <button>-</button> */}
+              <button aria-label="minus-button" onClick={decrement}>
+                -
+              </button>
               <input
-                name="quantity"
+                id={`${item.name}-quantity`}
+                name="catalog-quantity"
                 type="number"
                 min="1"
-                max="9"
+                max="5"
                 step="1"
                 value={quantityToBuy}
-                onChange={(e) => setQuantityToBuy(Number(e.target.value))}
+                readOnly
               />
-              {/* <button>+</button> */}
+              <button aria-label="plus-button" onClick={increment}>
+                +
+              </button>
             </div>
             <button className="add-to-cart" onClick={addToCart}>
               <img src={Bag} alt="Shopping Bag" />
@@ -63,17 +99,22 @@ const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
           <div className="in-cart">
             <div className="quantity">
               Quantity:
-              <button>-</button>
+              <button aria-label="minus-button" onClick={decrement}>
+                -
+              </button>{" "}
               <input
-                name="quantity"
+                id={`${item.name}-quantity`}
+                name="cart-quantity"
                 type="number"
                 min="1"
-                max="9"
+                max="5"
                 step="1"
-                value={item.quantity}
-                onChange={(e) => setQuantityToBuy(Number(e.target.value))}
+                value={itemQuantityCART}
+                readOnly
               />
-              <button>+</button>
+              <button aria-label="plus-button" onClick={increment}>
+                +
+              </button>
             </div>
             <button className="remove-from-cart" onClick={removeFromCart}>
               <img src={x} alt="Remove" />

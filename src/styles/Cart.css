@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-items: center;
-  gap: 4rem;
+  gap: 5vw;
 }
 
 .order-summary {

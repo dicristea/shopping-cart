@@ -9,6 +9,7 @@ import Card from "./Card";
 
 const ShoppingCart = ({ itemQuantity, updateItemQuantity }) => {
   const [cart, setCart] = useState([]);
+  const [subtotal, setSubtotal] = useState();
 
   const updateCart = () => {
     updateItemQuantity();
@@ -18,8 +19,21 @@ const ShoppingCart = ({ itemQuantity, updateItemQuantity }) => {
     setCart(shoppingCart);
   };
 
+  const calculateSubtotal = () => {
+    const localStorage = fetchCart();
+    const totalPrice = Object.keys(localStorage)
+      .filter(inCatalog)
+      .map((itemKey) => CATALOG[itemKey].price)
+      .reduce(
+        (accumulator, currentValue) =>
+          Number(accumulator) + Number(currentValue)
+      );
+    setSubtotal(`${totalPrice}.00`);
+  };
+
   useEffect(() => {
     updateCart();
+    calculateSubtotal();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -49,7 +63,7 @@ const ShoppingCart = ({ itemQuantity, updateItemQuantity }) => {
           <span className="h-line"></span>
           <div className="items">
             <div>Subtotal: </div>
-            <div>$Number</div>
+            <div>${subtotal}</div>
           </div>
           <div className="items">
             <div>Sales Tax: </div>
@@ -58,7 +72,7 @@ const ShoppingCart = ({ itemQuantity, updateItemQuantity }) => {
           <span className="h-line"></span>
           <div className="items">
             <div>Total:</div>
-            <div>$Number</div>
+            <div>${subtotal}</div>
           </div>
           <button className="purchase">PROCEED TO CHECKOUT</button>
         </div>

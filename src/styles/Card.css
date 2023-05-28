@@ -1,6 +1,6 @@
 .card-holder {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.7fr));
   justify-content: center;
   justify-items: center;
   gap: 25px;
@@ -81,8 +81,16 @@ button.remove-from-cart > img {
 }
 
 input[type="number"] {
+  font-family: inherit;
   padding: 0.2rem 0px;
   padding-left: 0.3rem;
-  border: 1px solid var(--accent);
-  border-radius: var(--border-radius);
+  border: none;
+  border-bottom: 1px;
+  appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
