@@ -3,16 +3,18 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   justify-items: center;
-  gap: 20px;
+  gap: 25px;
   position: relative;
 }
 
 .card {
+  border: 1px solid rgba(128, 128, 128, 0.477);
   border-radius: var(--border-radius);
   background-color: var(--card-color);
 }
 
-.image.container > img {
+.image-container > img {
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
   height: 100%;
   width: 100%;
   object-fit: fill;
@@ -21,7 +23,7 @@
 .item-info.container {
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr min-content;
 }
 
 .item-text {

@@ -2,7 +2,7 @@
 .cart-container {
   background-color: var(--body-color);
   padding-top: 130px !important;
-  padding: 5vw;
+  padding: 8vw;
 }
 
 @media only screen and (max-width: 400px) {

@@ -6,12 +6,12 @@ const Home = ({ navigateToCatalog }) => (
     <span className="hero-img">
       <img src={home} alt="Three people on a snowy mountain adventure." />
     </span>
-    <span className="hero-headline">
+    <div className="hero-headline">
       <h1>For your wildest adventrues.</h1>
       <button className="hero-button" onClick={navigateToCatalog}>
         <h3>View the Collection</h3>
       </button>
-    </span>
+    </div>
   </div>
 );
 

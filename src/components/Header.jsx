@@ -2,13 +2,13 @@ import React from "react";
 import Bag from "../assets/shopping-bag.png";
 import logo from "../assets/Luxuriant-Logo/name-logo-circle.png";
 import "../styles/Header.css";
-import CartNumber from "./CartNumber";
 
 const Header = ({
   navigateToHome,
   navigateToAbout,
   navigateToCatalog,
   navigateToCart,
+  itemQuantity,
 }) => (
   <header className="header">
     <div className="title">
@@ -27,7 +27,7 @@ const Header = ({
     <div>
       <button className="container bag-icon-container" onClick={navigateToCart}>
         <img src={Bag} alt="Shopping Bag" />
-        <CartNumber />
+        {itemQuantity}
       </button>
     </div>
   </header>

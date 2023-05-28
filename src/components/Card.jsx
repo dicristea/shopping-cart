@@ -4,7 +4,7 @@ import Bag from "../assets/shopping-bag-white-add.png";
 import fetchItem from "../utils/fetchItem";
 import x from "../assets/remove-x.png";
 
-const Card = ({ item, inCart }) => {
+const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(1);
 
   const addToCart = () => {
@@ -16,16 +16,17 @@ const Card = ({ item, inCart }) => {
     } else {
       localStorage.setItem(`${item.name}`, JSON.stringify(quantityToBuy));
     }
+    updateItemQuantity();
   };
 
   const removeFromCart = () => {
     localStorage.removeItem(`${item.name}`);
-    window.location.reload(false); // useEffect to reload only shopping Cart
+    updateCart();
   };
 
   return (
     <div className="card">
-      <div className="image container">
+      <div className="image-container">
         <img src={item.img} alt={`${item.gender}'s ${item.name}.`} />
       </div>
       <div className="item-info container">
@@ -43,6 +44,7 @@ const Card = ({ item, inCart }) => {
             <div className="quantity">
               {/* <button>-</button> */}
               <input
+                name="quantity"
                 type="number"
                 min="1"
                 max="9"
@@ -63,6 +65,7 @@ const Card = ({ item, inCart }) => {
               Quantity:
               <button>-</button>
               <input
+                name="quantity"
                 type="number"
                 min="1"
                 max="9"

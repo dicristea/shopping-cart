@@ -5,7 +5,7 @@ import Card from "./Card";
 import "../styles/Card.css";
 import CATALOG from "../utils/Catalog";
 
-const Catalog = () => (
+const Catalog = ({ updateItemQuantity }) => (
   <div className="catalog-container">
     <div className="catalog-header">
       <h2>Explore our top picks.</h2>
@@ -13,7 +13,12 @@ const Catalog = () => (
     </div>
     <div className="card-holder">
       {Object.values(CATALOG).map((item, index) => (
-        <Card key={index} item={item} inCart={false} />
+        <Card
+          key={index}
+          item={item}
+          inCart={false}
+          updateItemQuantity={updateItemQuantity}
+        />
       ))}
     </div>
   </div>

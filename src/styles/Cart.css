@@ -1,6 +1,7 @@
 .cart-display {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  justify-items: center;
   gap: 4rem;
 }
 
@@ -15,10 +16,10 @@
   align-items: start;
 }
 
-.summary-header {
+.summary-header,
+.items {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 890px) {
@@ -27,6 +28,13 @@
   }
   .order-summary {
     border: none;
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .order-summary {
+    width: 300px;
   }
 }
 
