@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.c1c3fe15.css",
-    "main.js": "/shopping-cart/static/js/main.2b2176b7.js",
+    "main.css": "/shopping-cart/static/css/main.270ec61d.css",
+    "main.js": "/shopping-cart/static/js/main.bcbaece5.js",
     "static/js/787.eaad36ba.chunk.js": "/shopping-cart/static/js/787.eaad36ba.chunk.js",
-    "static/media/about-hero-img.jpeg": "/shopping-cart/static/media/about-hero-img.6198f92e938dba33b9c3.jpeg",
+    "static/media/about-hero-img.jpeg": "/shopping-cart/static/media/about-hero-img.76304405df2d7a8f14b9.jpeg",
     "static/media/title-adventure.jpeg": "/shopping-cart/static/media/title-adventure.efbb90fac5a993cd956c.jpeg",
     "static/media/mens-white-black-jacket.jpeg": "/shopping-cart/static/media/mens-white-black-jacket.b243ebe6d90bc35ee1b3.jpeg",
     "static/media/womens-black-jacket.jpeg": "/shopping-cart/static/media/womens-black-jacket.d9ca5e8ecdb435f97856.jpeg",
@@ -15,12 +15,12 @@
     "static/media/unisex-blue-white-suit.jpeg": "/shopping-cart/static/media/unisex-blue-white-suit.9bba1418b3de568c8e2b.jpeg",
     "static/media/mens-yellow-pants.jpeg": "/shopping-cart/static/media/mens-yellow-pants.233ab140477a0d26fd4c.jpeg",
     "index.html": "/shopping-cart/index.html",
-    "main.c1c3fe15.css.map": "/shopping-cart/static/css/main.c1c3fe15.css.map",
-    "main.2b2176b7.js.map": "/shopping-cart/static/js/main.2b2176b7.js.map",
+    "main.270ec61d.css.map": "/shopping-cart/static/css/main.270ec61d.css.map",
+    "main.bcbaece5.js.map": "/shopping-cart/static/js/main.bcbaece5.js.map",
     "787.eaad36ba.chunk.js.map": "/shopping-cart/static/js/787.eaad36ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1c3fe15.css",
-    "static/js/main.2b2176b7.js"
+    "static/css/main.270ec61d.css",
+    "static/js/main.bcbaece5.js"
   ]
 }
