@@ -15,6 +15,8 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 
 ## Todos
 
+- Pre-load images using async JS
+  - https://jackskylord.medium.com/how-to-preload-images-into-cache-in-react-js-ff1642708240
 - Hover labels on all Icon Buttons
 - Use react routing rather to update URL on navigation to different pages.
 - Use useContext rather than prop drilling
