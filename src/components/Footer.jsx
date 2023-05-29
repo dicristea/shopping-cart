@@ -1,9 +1,23 @@
 import React from "react";
+import githubLogoWhite from "../assets/github-mark-white.png";
 import githubLogo from "../assets/GitHub-Mark-64px.png";
-import linkedInLogo from "../assets/LinkedIn-in-96.png";
+import linkedInLogoWhite from "../assets/In-White-72.png";
+import linkedInLogo from "../assets/In-black-96.png";
 
-const Footer = () => (
-  <footer>
+const Footer = ({ color }) => (
+  <footer
+    style={
+      color === "white"
+        ? { paddingBottom: "20px", height: "9vh" }
+        : {
+            height: "9vh",
+            color: "black",
+            display: "flex",
+            gap: "10px",
+            position: "relative",
+          }
+    }
+  >
     <div className="footer-icons">
       <a
         href="https://github.com/dicristea/"
@@ -12,7 +26,7 @@ const Footer = () => (
       >
         <img
           className="sourceGithub"
-          src={githubLogo}
+          src={color === "white" ? githubLogoWhite : githubLogo}
           alt="Diana's Github Profile"
         />
       </a>
@@ -23,7 +37,7 @@ const Footer = () => (
       >
         <img
           className="sourceLinkedIn"
-          src={linkedInLogo}
+          src={color === "white" ? linkedInLogoWhite : linkedInLogo}
           alt="Diana's LinkedIn Profile"
         />
       </a>

@@ -53,20 +53,32 @@ function App() {
       />
       <main className="main">
         {currentPage === "Home" && (
-          <Home navigateToCatalog={navigateToCatalog} />
+          <>
+            <Home navigateToCatalog={navigateToCatalog} />
+            <Footer color={"white"} />
+          </>
         )}
-        {currentPage === "About" && <About />}
+        {currentPage === "About" && (
+          <>
+            <About />
+          </>
+        )}
         {currentPage === "Catalog" && (
-          <Catalog updateItemQuantity={updateItemQuantity} />
+          <>
+            <Catalog updateItemQuantity={updateItemQuantity} />
+            <Footer color={"black"} />
+          </>
         )}
         {currentPage === "ShoppingCart" && (
-          <ShoppingCart
-            itemQuantity={itemQuantity}
-            updateItemQuantity={updateItemQuantity}
-          />
+          <>
+            <ShoppingCart
+              itemQuantity={itemQuantity}
+              updateItemQuantity={updateItemQuantity}
+            />
+            <Footer color={"black"} page={"cart"} />
+          </>
         )}
       </main>
-      <Footer />
     </div>
   );
 }

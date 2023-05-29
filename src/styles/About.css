@@ -6,8 +6,9 @@
 }
 
 .about-img > img {
-  height: auto;
+  height: 30vh;
   width: 100%;
+  object-fit: cover;
 }
 
 .about-header {
@@ -16,4 +17,11 @@
 
 .about-text {
   padding: 15px 5vw;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
 }

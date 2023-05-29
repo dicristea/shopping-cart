@@ -25,9 +25,13 @@ const Header = ({
       </button>
     </div>
     <div>
-      <button className="container bag-icon-container" onClick={navigateToCart}>
+      <button
+        className="container bag-icon-container"
+        aria-label="Shopping Bag"
+        onClick={navigateToCart}
+      >
         <img src={Bag} alt="Shopping Bag" />
-        {itemQuantity}
+        {itemQuantity !== 0 && itemQuantity}
       </button>
     </div>
   </header>

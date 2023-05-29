@@ -6,25 +6,29 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 
 ## Features
 
-1. You should have at least two pages (a homepage and a shop page, which includes your shopping cart). Let a user navigate between the pages with a navigation bar, which will be shown on both routes.
-
-2. To your homepage, you can add whatever you’d like! A few images or information will be totally fine; it doesn’t have to be something fancy. The main goal of the project is to focus on setting up the shopping cart. The homepage is there to practice routing using react-router-dom.
-
-3. On your shopping cart route, a user should see a sticky bar (it can be just a top section as well), which displays the number of items currently in the cart. You should also have a button next to it where you can go to the cart to checkout and pay (however we are not going to implement this logic here).
-
-4. Build individual card items for each of your products. Display an input field on it, which lets a user manually type in how many items they want to buy. Also, add an increment and decrement button next to it for fine-tuning. You can also display a title for each product as well as an “Add To Cart” button.
-
-5. Once a user has submitted their order, the amount on the cart itself should adjust.
-   Make sure to test your app thoroughly using the React Testing Library. Take care that you don’t directly test react-router-dom, since it is an external library and the developers working on it must have tested the library already.
+- Home, About, Catalong, and Shopping Cart pages with easy UI navigation
+- Sticky Navgation Bar shopping bag icon displays quantity of items currently in the cart
+- Custom input for quanitity increment and decrement, readonly
+- Maximum 5 of one item can be in the cart.
+- On submitting an order or editting the cart, the amount in the cart and order summary adjusts, as well at the total price
+- Can remove items quickly from the cart via 'x'
 
 ## Todos
 
-- Make UI more responsive for phone screens --> css media queries
+- Hover labels on all Icon Buttons
+- Use react routing rather to update URL on navigation to different pages.
 - Use useContext rather than prop drilling
+- "Proceed to Checkout" is currently inactive.
 
 ## What I learned
 
-- working with state and understanding when I could use hooks (API keys, endpoints, error handling)
+- Using "body::before" alongside a sticky nav bar for full page background image
+  Check: <a href="https://forum.freecodecamp.org/t/why-does-body-before-code-work-and-not-body/350130">Freecodecamp Article</a>
+- Using an object as a data structure for easy configuration of catalog and shopping cart information.
+- Using Object.keys(), Object.values() to return array of just those values.
+- working with state and understanding when to use useEffect to update only parts of a page
+- Practiced Git workflow: Git branching, github pull requests, editting commits
+- Practiced using array methods, spread syntax, inline styling, media queries
 
 ## Sources
 
@@ -35,6 +39,7 @@ A shopping cart experience created using ReactJS! Here, I explore the usage and 
 - Catalog: Blue White Suit Photo by <a href="https://unsplash.com/@phodskins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hodskins</a> on <a href="https://unsplash.com/photos/YKikzmEOJXM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Catalog: Yellow Pants Photo by <a href="https://unsplash.com/@rodograph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Rodvang</a> on <a href="https://unsplash.com/photos/kIavtjR0sZY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - About Hero Photo by <a href="https://unsplash.com/@moorecreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harrison Moore</a> on <a href="https://unsplash.com/photos/pNuBdhn8vKU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Site inspired by <a href="https://www.moncler.com/en-us/">Moncler</a>
 
 ## React
 

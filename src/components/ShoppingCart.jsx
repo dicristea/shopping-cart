@@ -28,7 +28,7 @@ const ShoppingCart = ({ itemQuantity, updateItemQuantity }) => {
         (accumulator, currentValue) =>
           Number(accumulator) + Number(currentValue)
       );
-    setSubtotal(`${totalPrice}.00`);
+    setSubtotal(`${totalPrice}`);
   };
 
   useEffect(() => {
