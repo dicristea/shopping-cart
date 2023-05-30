@@ -37,7 +37,7 @@ const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
         JSON.stringify(itemQuantityCART - 1)
       );
       updateCart();
-    } else {
+    } else if (quantityToBuy > 1) {
       setQuantityToBuy(quantityToBuy - 1);
     }
   };
@@ -50,7 +50,7 @@ const Card = ({ item, inCart, updateItemQuantity, updateCart }) => {
         JSON.stringify(Number(itemQuantityCART) + 1)
       );
       updateCart();
-    } else {
+    } else if (quantityToBuy < 5) {
       setQuantityToBuy(Number(quantityToBuy) + 1);
     }
   };

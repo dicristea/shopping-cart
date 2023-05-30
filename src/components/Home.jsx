@@ -7,7 +7,7 @@ const Home = ({ navigateToCatalog }) => (
       <img src={home} alt="Three people on a snowy mountain adventure." />
     </span>
     <div className="hero-headline">
-      <h1>For your wildest adventrues.</h1>
+      <h1>For your wildest adventures.</h1>
       <button className="hero-button" onClick={navigateToCatalog}>
         <h3>View the Collection</h3>
       </button>
